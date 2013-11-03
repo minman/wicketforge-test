@@ -8,7 +8,9 @@ import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.panel.Panel;
 
 /**
- * --MyPage
+ * Hierarchy TestPage
+ *
+ * --MyPage2
  *
  * abstractComponent
  * referencedAbstractComponent
@@ -48,8 +50,8 @@ import org.apache.wicket.markup.html.panel.Panel;
  * referencedMypPanel
  *
  */
-public class MyPage extends WebPage {
-    public MyPage() {
+public class MyPage2 extends WebPage {
+    public MyPage2() {
 
         //** Component without childs
 
