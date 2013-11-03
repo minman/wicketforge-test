@@ -1,6 +1,5 @@
 package wicketforge.test;
 
-import org.apache.wicket.PageParameters;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.AjaxLink;
 import org.apache.wicket.markup.html.WebPage;
@@ -11,6 +10,7 @@ import org.apache.wicket.markup.html.form.validation.FormComponentFeedbackBorder
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.markup.html.panel.Panel;
+import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class MyPage1 extends WebPage {
             @Override
             public void onClick(AjaxRequestTarget target) {
                 MyPage1.this.replace(new Label("messageReplace", "replaced"));
-                target.addComponent(MyPage1.this);
+                target.add(MyPage1.this);
             }
         };
         add(linkReplace);
@@ -53,7 +53,7 @@ public class MyPage1 extends WebPage {
             @Override
             public void onClick(AjaxRequestTarget target) {
                 label.replaceWith(new Label("messageReplaceWith", "replaced"));
-                target.addComponent(MyPage1.this);
+                target.add(MyPage1.this);
             }
         };
         add(linkReplaceWith);

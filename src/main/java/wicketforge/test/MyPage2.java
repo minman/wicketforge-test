@@ -176,11 +176,11 @@ public class MyPage2 extends WebPage {
         }
 
         { // add panel
-            add(new Panel("panel"));
+            add(new Panel("panel") {});
         }
 
         { // add referenced panel
-            Panel panel = new Panel("referencedPanel");
+            Panel panel = new Panel("referencedPanel") {};
             panel.add(new Label("referencedPanelLabelOuter"));
             add(panel);
         }
