@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<body>
+<!--
+    <ul>
+        <li wicket:id="list">
+            <span wicket:id="panel"></span>
+        </li>
+    </ul>
+-->
+
+
+    <div wicket:id="usage1"></div>
+    <div wicket:id="usage2"></div>
+
+
+    <wicket:fragment wicket:id="frag1">
+        Fragment 1
+        <span wicket:id="fraglabel1"></span>
+
+        <wicket:fragment wicket:id="nestedfrag1">
+            Nested Fragment 1
+            <span wicket:id="nestedfraglabel1"></span>
+        </wicket:fragment>
+
+    </wicket:fragment>
+
+    <wicket:fragment wicket:id="frag2">
+        Fragment 2
+        <span wicket:id="fraglabel2"></span>
+
+    </wicket:fragment>
+
+</body>
+</html>
